@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đặt hàng thành công</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+      background-color: sandybrown;
+    }
+    
+    img {
+      max-width: 300px;
+      height: auto;
+    }
+
+    .blink {
+      animation: colorChange 1s infinite;
+    }
+
+    @keyframes colorChange {
+      0% { color: red; }
+      14% { color: orange; }
+      28% { color: yellow; }
+      42% { color: green; }
+      56% { color: blue; }
+      70% { color: indigo; }
+      84% { color: violet; }
+      100% { color:beige; }
+    }
+  </style>
+</head>
+<body>
+  
+  <h2 id="success-message" class="blink">Đã đặt hàng thành công</h2>
+  <p>Cảm ơn quý khách</p>
+  <a href="Thucdon.html">Quay lại trang chủ</a>
+
+  <script>
+    const successMessage = document.getElementById('success-message');
+
+    // Hàm để bắt đầu hiệu ứng nhấp nháy
+    function startBlinking() {
+      successMessage.classList.add('blink');
+    }
+
+    // Bắt đầu hiệu ứng nhấp nháy ngay lập tức
+    startBlinking();
+  </script>
+</body>
+</html>
